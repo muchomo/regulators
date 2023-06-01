@@ -1,0 +1,987 @@
+html,
+body{
+  width: 100%;
+  color:#000;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+}
+body{
+  background-color: #282828;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  font-family: 'Germanica.ttf';
+}
+nav{
+  background-color: #101010;
+  height: 100px;
+  padding-left: 2%;
+}
+#navInfo{
+  background-color: #232323;
+  width: 100%;
+  height: 25px;
+  position: fixed;
+  top: 80px;
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+#nav_menu_button{
+  
+  width: 100%;
+  height: 150px;
+  color: #ffffff;
+  border-style: none;
+  font-size: 1.5rem;
+}
+#screen {
+  width: 100%;
+  height: 110%;
+  background-color: #00000891;
+  background-image: url('https://i.giphy.com/media/81UZD1aketpu1SP3BH/giphy.webp');
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+
+}
+#messageOfDayContainer{
+  background-color: #fff;
+  height: 100%;
+}
+#messageOfDay{
+  text-align: center;
+}
+#screen1 {
+  width: 100%;
+  height: 110%;
+  background-image: url('https://cronoballz.com/wp-content/uploads/2022/12/IMG_3607.jpg');
+  background-size: cover;
+  position: fixed;
+  z-index: -500;
+
+}
+#screen5 {
+  width: 100%;
+  height: 110%;
+  background-image: url('https://cronos.org/static/banner-cronos.7172a683.png');
+  background-size: cover;
+  position: fixed;
+  z-index: -5;
+
+}
+#screen2 {
+  width: 100%;
+  height: 110%;
+  background-color: #0000008f;
+  background-image: url('https://i.giphy.com/media/81UZD1aketpu1SP3BH/giphy.webp');
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+
+}
+#screen6 {
+  width: 100%;
+  height: 110%;
+  background-color: #0000005e;
+  background-image: url('https://i.giphy.com/media/81UZD1aketpu1SP3BH/giphy.webp');
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+
+}
+#screen4 {
+  width: 100%;
+  height: 110%;
+  background-color: #282828;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+
+}
+#sections:hover{
+  background-color: #0064a2;
+}
+#screent {
+  width: 100%;
+  height: 110%;
+  background-color: #3b3b3b9e;
+  background-image: url('https://media3.giphy.com/media/z2POQZ2t8s5Gzp4C7r/giphy.gif?cid=ecf05e47znljfqmgczias2du60f7s9zem5bv7kbe8ze168zq&rid=giphy.gif&ct=g');
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+
+}
+#screen3 {
+  width: 100%;
+  height: 110%;
+  background-color: #0000009e;
+  background-image: url('https://media4.giphy.com/media/tbtc3hMp6wRE8PwXxB/giphy.gif?cid=ecf05e47gwt1vj4sfelfbntu094uax9tkfl53vu5ibz1s8w6&rid=giphy.gif&ct=g');
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+
+}
+h1{
+  padding-top: 100px;
+  width: 100%;
+}
+.playerBalInfo{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+#hiw{
+  width: 150px;
+  height: 50px;
+  padding: 1em;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+li {
+  padding-bottom: 14px;
+  text-align: center;
+  justify-content: center;
+  font-size: x-large;
+  color: rgb(226, 226, 226);
+}
+li a{
+  padding-bottom: 14px;
+  text-align: center;
+  justify-content: center;
+  font-size: x-large;
+  color: #fff;
+}
+.main {
+  min-height: 100vh;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+
+}
+.dtt{
+  font-weight: bold;
+}
+input{
+  width: 150px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffffb3;
+  border-radius: 10px 0 0 10px;
+}
+#interface{
+  height: 100%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #ffffff80;
+  margin:auto;
+  border: solid 5px;
+  border-color: #d4b800;
+
+}
+#mediaSection{
+  width:80%;
+  height: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 32px;
+}
+.p2esection{
+  height: 20%;
+  
+}
+#newsInfo{
+  background-color: #a29a00;
+  width: 100%;
+  height: 30%;
+}
+.containerPadding{
+  height: 20%;
+}
+#upperSection{
+  background-image: url('https://cronoballz.com/wp-content/uploads/2023/06/crowd10.mp4');
+  background-position: center;
+  background-size: contain;
+}
+#infoContainer{
+  width: 100%;
+  background-color: #ffffff;
+  height: 50%;
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding-top:3%;
+  
+}
+#infoLeftContainer,#infoRightContainer{ 
+width: 45%;
+height: 80%;
+float: left;
+background-color: #fff;
+
+}
+#infoLeftContainer{
+  border-right: solid;
+  margin-left: 4%;
+}
+#contactButton{
+  
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  background-color: #d4b800;
+}
+#contactButton:hover{
+  background-color: #dedede;
+}
+#welcomeTitle{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #ffe710;
+}
+#aboutp2e{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #151515;
+  height: 30%;
+}
+#video{
+  height: 80%;
+  width: 100%;
+}
+#playerCheckBox{
+  width: 20px;
+  height: 20px;
+}
+#save-new-team{
+  
+  height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffffb3;
+  border-radius: 0 10px 10px 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+aside, footer {
+  width: 100%;
+  margin-left: 1%;
+}
+#playersDisplay{
+ 
+  width: 100%;
+  height: 300px;
+  background-color: #282828;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+}
+#playerRow{
+  height: 50px;
+  display: flex;
+  width: 100%;
+}
+section {
+  width: 100%;
+  height: 100%;
+}
+.footer:hover, .footer:active{
+  opacity: 1;
+  transition: color 4s ease, border-color 0.15s ease;
+}
+.myTable{
+  display: block;
+  color:#000;
+}
+.activityTitle
+* {
+  box-sizing: border-box;
+}
+#bMenu{
+  width: 400px;
+  height: 100%;
+  margin-top: 0px;
+  display: inline;
+}
+#fantasyPlayerInfo{
+  width: 50%;
+}
+#rewardsbutton{
+  width:25%;
+  height: 50px;
+  float: right;
+  color:#fff;
+  background-color: #000;
+}
+#redeembutton{
+  width:80%;
+  height: 50px;
+  display: block;
+  margin: auto;
+  color:#fff;
+  background-color: #000;
+}
+#playerAddress{
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top:8px;
+}
+#logoImage{
+  width:200px;
+  height:50px;
+  display: block;
+  margin: auto;
+}
+#fantasyPlayerPhoto{
+  display: block;
+  margin: auto;
+}
+#mock-results{
+  display: block;
+  margin-top: 19%;
+  height: 50px;
+  width: auto;
+}
+#redeemContainer{
+  height: 50%;
+  padding-top: 8px;
+}
+#wPanel{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 16px;
+}
+#phoneNumber{
+  float:right;
+  margin-right:16px;
+}
+#emailAddress{
+  margin-left:16px;
+}
+.bMenuItem{
+  padding-left: 30px;
+}
+.card_bg{
+  background-color: #fff;
+}
+#userstakedinfo {
+  color: #fff,
+}
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+#days{
+  color: red;
+  font-weight: bold;
+}
+#logo{
+  margin-left: 10px;
+}
+span{
+  
+  color: rgb(255, 238, 0);
+}
+#activity {
+  font-size: larger;
+}
+#connectbutton {
+  position: fixed;
+  top: 15px;
+  right: 16px; 
+  background-color: rgba(255, 255, 255, 0.872);
+  z-index: 1000;
+}
+#approvebutton {
+  position: fixed;
+  top: 95px;
+  right: 30px; 
+  background-color: rgba(255, 255, 255, 0.872);
+}
+
+
+#redeem:hover, #mintbutton:hover, #approvebutton:hover, #connectbutton:hover, #claimbutton:hover, #buycbz:hover, #stakebutton:hover, #unstakebutton:hover, #howtouse:hover {
+  filter: drop-shadow(0 0 2rem rgb(6, 106, 255));
+  background-color: #ffffff;
+}
+#approvebutton:active, #connectbutton:active, #claimbutton:active, #buycbz:active, #stakebutton:active, #unstakebutton:active {
+  border-color: blue;
+  background-color: yellow;
+}
+#cbzamount, #unstakecbzamount {
+  width: 150px;
+}
+#claimbutton, #buycbz, #stakebutton, #unstakebutton{
+  background-color: #fafafbd9;
+  height: 50px;
+  width: 150px;
+}
+#redeem{
+  background-color: #fafafbd0;
+  margin-top: 16px;
+  height: 50px;
+  width: 310px;
+}
+#howtouse {
+  background-color: #00000819;
+  height: 50px;
+  width: 300px;
+}
+#cbznews{
+  background: #dfee09ac;
+  color: #000;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  -webkit-text-stroke: .2px black;
+}
+#dexscreener-embed {
+  margin: 10px;
+  margin-bottom: 0px;
+}
+#bottomMenu{
+  width: 100%;
+  display: block;
+}
+#action {
+  width: 100%;
+}
+#status {
+  color: #fff;
+}
+
+#loadingSequence {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(244, 242, 231, 0.64);
+  z-index: 10000;
+}
+#loadingSequence1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("https://media4.giphy.com/media/l1J9EQhfkb8tPu836/giphy.gif?cid=ecf05e47i1svwtjdfo4u5wwtlerns951auh8z9zg4x75ixh9&rid=giphy.gif&ct=s");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+#loadingSequence2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("https://media4.giphy.com/media/tbtc3hMp6wRE8PwXxB/giphy.gif?cid=ecf05e47gwt1vj4sfelfbntu094uax9tkfl53vu5ibz1s8w6&rid=giphy.gif&ct=g");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+#loadingSequence3 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("https://media1.giphy.com/media/3htQ6tCfZ3qfv4sXk6/giphy.gif?cid=ecf05e47aulw218s8et1ru5hq4py4rot72jubv3zi2n86ivm&rid=giphy.gif&ct=g");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+#loadingImage {
+  margin-top: 20%;
+  margin-left: 45%;
+}
+#mintbutton {
+  position: fixed;
+  top: 17px;
+  left: 33px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #00000800;
+  background-position: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 50px;
+  border-style: none;
+}
+.circle-wrapper {
+  position: fixed;
+  top: 13px;
+  left: 28px; 
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.icon {
+  position: absolute;
+  color: #fff;
+  font-size: 55px;
+  top: 45px;
+  left: 55px;
+  transform: translate(-50%, -50%);
+  background-image: url('../public/mascot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  
+}
+#walletAddy, #twitterButton, #discordButton {
+  width: fit-content;
+  position: fixed;
+  color: #fff;
+}
+#twitterButton {
+  background-image: url('../public/twitter.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 20%;
+  border-style: none;
+  right: 160px;
+  top: 15px;
+  z-index: 1000;
+}
+#discordButton {
+  background-image: url('../public/discord.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 20%;
+  border-style: none;
+  right: 220px;
+  top: 15px;
+}
+#instructions {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.circle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2.5px;
+  background-clip: content-box;
+  animation: spin 10s linear infinite;
+  
+}
+#prizeLabel{
+  width: 100%;
+}
+.circle-wrapper:active .circle {
+  animation: spin 2s linear infinite;
+}
+.warning {
+  
+  border: 2.5px dashed #171717;
+}
+
+#app {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 172px;
+  top: -20px;
+  z-index: 2;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'Bitcoin.otf';
+  src: url('Bitcoin.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Germanica.ttf';
+  src: url('Germanica.ttf');
+  font-weight: bold;
+}
+.circles1 li{
+  position: fixed;
+  display: grid;
+  list-style: none;
+  width: 90px;
+  height: 90px;
+  background-image: url('https://cronoballz.com/wp-content/uploads/2022/11/cbz.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+.circles, .circles1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circles li{
+  position: fixed;
+  display: grid;
+  list-style: none;
+  width: 90px;
+  height: 90px;
+  background-image: url('../public/mascot.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1),.circles1 li:nth-child(1){
+  left: 25%;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/1200px-Baseball.svg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2),.circles1 li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://p7.hiclipart.com/preview/654/683/700/football-clip-art-football-player-cartoon.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3),.circles1 li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://assets.stickpng.com/images/580b585b2edbce24c47b2b90.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4),.circles1 li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  background-image: url('https://pngimg.com/d/ping_pong_PNG10367.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5),.circles1 li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6),.circles1 li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7),.circles1 li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8),.circles1 li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9),.circles1 li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10),.circles1 li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-3000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg);
+  }
+}
+#signup-portal {
+  text-align: center;
+  padding: 50px;
+}
+
+#signup-portal h1 {
+  font-size: 48px;
+}
+#cardOne,#cardTwo,#cardThree,#cardFour,#cardFive{
+  width: 15%;
+  height: 100%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#questMap{
+  background-image: url('../public/m2.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#myCards{
+  width:100%;
+  height: 50%;
+  background-color: #ffffff;
+}
+#world{
+  background-image: url('../public/Field 1.png');
+}
+#rewardsDiv{
+  background-image: url('../public/p24.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#rightArrow{
+  background-image: url('https://media.istockphoto.com/id/1124766970/vector/arrow-with-outline-on-white-background.jpg?s=612x612&w=0&k=20&c=XB5nrrhYN33J0bV1BJiQ2ZtmMcgiYi3s17eefqKniG8=');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+#calz{
+  background-color: #ffffff80;
+  border-color: #eee;
+  border-style: solid;
+  border-radius: 10px;
+}
+#leftArrow{
+  background-image: url('https://media.istockphoto.com/id/1124766970/vector/arrow-with-outline-on-white-background.jpg?s=612x612&w=0&k=20&c=XB5nrrhYN33J0bV1BJiQ2ZtmMcgiYi3s17eefqKniG8=');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+#cardOne,#cardTwo,#cardThree,#cardFour{
+
+  margin-right: 10px;
+}
+#lastSection{
+  background-image: url('https://thumbs.gfycat.com/HeavenlyImpressionableHarvestmen-max-1mb.gif');
+  background-position: center;
+  background-size: cover;
+}
+#signup-portal p {
+}
+
+#signup-btn,#login-btn,#clubMangement,#operatorLogin {
+  font-size: 24px;
+  margin-top: 50px;
+}
+#player-selection {
+  text-align: center;
+  padding: 50px;
+}
+
+#player-selection h2 {
+  font-size: 36px;
+}
+
+#player-selection p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#player-table {
+  margin-top: 50px;
+  border-collapse: collpse;
+}
+
+
+/* Team summary styles */
+#user-team {
+  margin-top: 50px;
+  padding: 5px;
+  height: 100%;
+  background-color: #f38304;
+  border-radius: 10px;
+  }
+  
+  #user-team h2 {
+  font-size: 36px;
+  }
+  
+  #user-team p {
+  width: 50%;
+  font-size: 18px;
+  float: left;
+  background-color: #f38304;
+  height: 50px;
+  }
+  #fantasyPlayerRankHeader{
+    text-align: center;
+  }
+  
+ 
+  
+  
+  /* Summary page styles */
+  #summary {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  }
+  
+  #banner {
+  height: 200px;
+  width: 100%;
+  background-image: url('../public/2.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  
+  #summary h1 {
+  font-size: 48px;
+  margin-top: 50px;
+  }
+  
+  #summary p {
+  font-size: 18px;
+  margin: 20px 0;
+  }
+  
+  
+  #buyNewTeam{
+    
+  }
+  #new-team {
+    float: left;
+    width: 50%;
+    height: 40px;
+    border-radius: 0 0 10px 0;
+  }
+  #manage-team {
+    width: 50%;
+    float: left;
+    height: 40px;
+    border-radius: 0 0 0 10px;
+    }
+  
+  #calendar {
+  margin-top: 50px;
+  }
+  #winners{
+    margin-top: 120px;
+  }
