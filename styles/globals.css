@@ -867,14 +867,7 @@ span{
   padding: 50px;
   }
   
-  #banner {
-  height: 200px;
-  width: 100%;
-  background-image: url('../public/2.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
+
   
   #summary h1 {
   font-size: 48px;
