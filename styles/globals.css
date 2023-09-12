@@ -544,19 +544,7 @@ span{
   height: 50px;
   float: left;
 }
-.icon {
-  position: absolute;
-  color: #fff;
-  font-size: 55px;
-  top: 45px;
-  left: 55px;
-  transform: translate(-50%, -50%);
-  background-image: url('../public/mascot.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 1000;
-  
-}
+
 #walletAddy, #twitterButton, #discordButton {
   width: fit-content;
   position: fixed;
@@ -664,11 +652,7 @@ span{
   }
 }
 
-@font-face {
-  font-family: 'Bitcoin.otf';
-  src: url('Bitcoin.otf');
-  font-weight: bold;
-}
+
 @font-face {
   font-family: 'Germanica.ttf';
   src: url('Germanica.ttf');
@@ -697,20 +681,7 @@ span{
   z-index: -1;
 }
 
-.circles li{
-  position: fixed;
-  display: grid;
-  list-style: none;
-  width: 90px;
-  height: 90px;
-  background-image: url('../public/mascot.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: animate 25s linear infinite;
-  bottom: -150px;
-  
-}
+
 
 .circles li:nth-child(1),.circles1 li:nth-child(1){
   left: 25%;
@@ -827,40 +798,11 @@ span{
     transform: rotateZ(360deg);
   }
 }
-#signup-portal {
-  text-align: center;
-  padding: 50px;
-}
 
-#signup-portal h1 {
-  font-size: 48px;
-}
-#cardOne,#cardTwo,#cardThree,#cardFour,#cardFive{
-  width: 15%;
-  height: 100%;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-#questMap{
-  background-image: url('../public/m2.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#myCards{
-  width:100%;
-  height: 50%;
-  background-color: #ffffff;
-}
-#world{
-  background-image: url('../public/Field 1.png');
-}
-#rewardsDiv{
-  background-image: url('../public/p24.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
+
+
+
 #rightArrow{
   background-image: url('https://media.istockphoto.com/id/1124766970/vector/arrow-with-outline-on-white-background.jpg?s=612x612&w=0&k=20&c=XB5nrrhYN33J0bV1BJiQ2ZtmMcgiYi3s17eefqKniG8=');
   background-position: center;
@@ -881,10 +823,7 @@ span{
   background-repeat: no-repeat;
   transform: scaleX(-1);
 }
-#cardOne,#cardTwo,#cardThree,#cardFour{
 
-  margin-right: 10px;
-}
 #lastSection{
   background-image: url('https://thumbs.gfycat.com/HeavenlyImpressionableHarvestmen-max-1mb.gif');
   background-position: center;
@@ -892,28 +831,6 @@ span{
 }
 
 
-#signup-btn,#login-btn,#clubMangement,#operatorLogin {
-  font-size: 24px;
-  margin-top: 50px;
-}
-#player-selection {
-  text-align: center;
-  padding: 50px;
-}
-
-#player-selection h2 {
-  font-size: 36px;
-}
-
-#player-selection p {
-  font-size: 18px;
-  margin: 20px 0;
-}
-
-#player-table {
-  margin-top: 50px;
-  border-collapse: collpse;
-}
 
 
 /* Team summary styles */
