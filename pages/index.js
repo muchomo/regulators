@@ -45,6 +45,7 @@ export default function Home() {
   const [contractOwner, setContractOwner] = useState(null);
   const [isNewUser, setIsNewUser] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
+  const [menuOpen,setMenuOpen]= useState(false);
 
   const Web3 = require('web3');
   const web3 = new Web3('https://evm-t3.cronos.org');
@@ -134,7 +135,20 @@ var o = 0;
   } = useWeb3React();
 
  
+async function setMenuPosition() {
+  const button = document.getElementById('menu_btn');
+  if(!menuOpen){
+    setMenuOpen(true);
+    button.classList.add = 'rotate';
+    button.src= 'menuo.png';
 
+  }else{
+    setMenuOpen(false);
+    button.classList.remove= 'rotate';
+    button.src= 'menuc.png';
+    
+  }
+}
   async function connect() {
     if (typeof window.ethereum !== "undefined") {
       try {
@@ -358,15 +372,25 @@ async function viewWelcome(){
 		<meta property="og:image" content="https://cronoballz.com/wp-content/uploads/2022/12/cbzd.png" />
       </Head>
       <nav className={styles.nav_grid}>
-        <img id="logoImage" src="https://nflregulators.com/wp-content/uploads/2023/05/RegulatorsTextFinalTransparent.png" />
      <a
             className={styles.connect_button} 
           >
- 
-        {active?  <button className={styles.button} id="connectbutton" onClick={()=> disconnect()}>LOG OUT</button>:<button className={styles.button} id="connectbutton" onClick={()=> connect()}>LOGIN</button>} 
+            <img id="logoImage" src="tokens.png"/>
+            <img id="logow" src="word.png"/>
+ <button id="menu_btn" onClick={setMenuPosition}/>
+        
       </a>
           <div id="navInfo">
-            <Infopanel />
+          <div id="dc">
+        <img id="dscord" src="discord.png" /></div>
+        <div id="fbi">
+        <img id="fbook" src="fb.png" /></div>
+        <div id="tri">
+        <img id="trr" src="twitter.png" /></div>
+        <div id="insi">
+        <img id="instag" src="inst.png" /></div>
+        <div id="twi">
+        <img id="twic" src="twitch.png" /></div>
           </div>
       </nav>
       {active ? (
@@ -377,9 +401,15 @@ async function viewWelcome(){
         ""
       )}
       <div id="screen4"></div>
-      <div style={{width:'500px',height:'900px',display:'block',margin:'auto',display:'flex',backgroundColor:'#282828'}}>
-        <div style={{width:'100%', height:'auto',marginTop:'25%',backgroundImage:'url(https://nflregulators.com/wp-content/uploads/2023/05/RegulatorsFinalTranparent-1.png)',backgroundPosition:'center',backgroundSize:'contain',backgroundRepeat:'no-repeat'}}>
+      
+      <div style={{width:'500px',height:'900px',display:'block',margin:'auto',display:'flex'}}>
+        <div style={{width:'100%', height:'auto',marginTop:'25%',backgroundPosition:'center',backgroundSize:'contain',backgroundRepeat:'no-repeat'}}>
           <div id="interface">
+            {menuOpen?
+          <div id="mainMenu" onClick={setMenuPosition}>
+            <div id="menuOptions">
+        <button id="logout" onClick={disconnect}>DISCONNECT</button></div>
+      </div>:""}
             {active ?<>
              <div className={styles.p2esection} id="upperSection">
               <div className={styles.containerPadding}></div>
@@ -401,12 +431,12 @@ async function viewWelcome(){
               </div>
               </div> 
              <div className={styles.p2esection}style={{height:'40%'}}>
-              <img src="regulators.png" id="playerHolder" />
+              <img src="center.png" id="playerHolder" />
               </div> 
            
              <div className={styles.p2esection}>
               <div id="redeemContainer">
-              <button id="redeembutton" onClick={claimRewards}> REDEEM</button></div>
+              <button id="redeembutton" onClick={claimRewards}> PRACTICE</button></div>
               <div id="contactContainer">
               <p id="emailAddress">regulators@cronoballz.com
                 <a id="phoneNumber">(904) 894 - 7276</a>
@@ -422,16 +452,16 @@ async function viewWelcome(){
           
             <div id="mediaSection">
               <div id="video">
-              <iframe width="100%" height="100%" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <img src="title.png" id="main_pic"/>
               </div>
-            
+            <div id="main_sec">
+              <img id="mainImage" src="center.png"/>
+            </div>
             </div>
             
-            <p id="aboutp2e">Earn $CBZ token by showing up to practice, competitions, and by volunteering at community events.</p>
+            <button id="loginBu" onClick={()=> connect()}>SIGN IN </button>
             <div id="contactContainerNonActive">
-              <p id="emailAddress">regulators@cronoballz.com
-                <a id="phoneNumber">(904) 894 - 7276</a>
-              </p>
+              
               </div></>}
           </div>
         </div>

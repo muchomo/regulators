@@ -289,7 +289,7 @@
     flex-wrap: wrap;
     width: 50%;
   }
-
+  
   .nav_grid {
     
     align-items: center;
@@ -297,6 +297,7 @@
     flex-wrap: wrap;
     width: 100%;
     position: fixed;
+    background-color: #172647;
   }
   .scribecard { 
     background: #dfee09ac;
@@ -473,9 +474,9 @@
   padding-top: 2rem;
 }
 .connect_button {
-  justify-content: flex-end;
-  height: 50px;
-  width: 150px;
+  height: 90px;
+  width: 100%;
+
   
 }
 .button {

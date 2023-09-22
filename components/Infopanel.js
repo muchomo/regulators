@@ -19,12 +19,23 @@ export default function Infopanel() {
     minutes = minutes < 10 ? '0'+minutes : minutes;
     let strTime = hours + ':' + minutes + ' ' + ampm;
     
-    
+    //{strTime} {dateString}
  
   return (
 
  
-      <a style={{color:'#fff'}}>{strTime} {dateString}</a>
+      <a style={{color:'#fff',height:'50px',display:'block'}}>
+        <div id="dc">
+        <img id="dscord" src="discord.png" /></div>
+        <div id="fbi">
+        <img id="fbook" src="fb.png" /></div>
+        <div id="tri">
+        <img id="trr" src="twitter.png" /></div>
+        <div id="insi">
+        <img id="instag" src="inst.png" /></div>
+        <div id="twi">
+        <img id="twic" src="twitch.png" /></div>
+      </a>
         
   );
 }
